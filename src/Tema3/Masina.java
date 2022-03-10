@@ -6,20 +6,14 @@ public class Masina extends Vehicul {
 		setBrand(Brand);
 		setNivelPoluare(nivelPoluare);
 		setVitezaMedie(vitezaMedie);
-
 	}
 	@Override
 	public String nume() {
-		return toString();
+		return "Dacia";
 	}
-	
+	@Override
 	public String motorizare() {
-		return toString();
+		return "benzina";
 	}
 	
-	public void vehicul() {
-		System.out.println("Nivelul de poluare pentru masina " + getBrand() +" este " + getNivelPoluare() + " si viteza medie atinsa este de " + getVitezaMedie());
-		
 	}
-	
-}

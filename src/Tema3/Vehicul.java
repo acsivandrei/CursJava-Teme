@@ -26,15 +26,14 @@ public class Vehicul {
 	}
 	
 	public String nume() {
-		return toString();
-		
+		return "Dacia";
 	}
 	public String motorizare() {
-		return toString();
+		return "benzina";
 		
 	}
 	public void vehicul() {
-		System.out.println("Nivelul de poluare pentru masina " + getBrand() +" este " + getNivelPoluare() + " si viteza medie atinsa este de " + getVitezaMedie());
+		System.out.println("Nivelul de poluare pentru " + nume() + getBrand() +" este " + getNivelPoluare() + " si viteza medie atinsa este de " + getVitezaMedie());
 		
 	}
 	
