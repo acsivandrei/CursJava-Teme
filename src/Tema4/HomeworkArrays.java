@@ -6,10 +6,15 @@ public class HomeworkArrays {
 
 	public static void main(String[] args) {
 		
+		int answear;
+		do {	
 		Scanner scan = new Scanner(System.in);
 		System.out.println("Please enter a number between 1 and 12:");
-		int answear = scan.nextInt();
-								
+		answear = scan.nextInt();
+		if(answear<0 || answear>12);
+		System.out.println("Please enter a valid number!");
+		}while(answear<0 || answear>12);
+		
 		String [] month = new String [13];
 		month[0] = "Please enter a valid number!";
 		month[1] = "January";
@@ -25,18 +30,7 @@ public class HomeworkArrays {
 		month[11] = "November";
 		month[12] = "December";
 		
-		try {
-			System.out.println(month[answear]);
-		} catch (Exception e) {
-			System.out.println("Please enter a valid number!");
-		}
+		System.out.println(month[answear]);
 		
-		do {
-			System.out.println("Please enter a number between 1 and 12:");
-			answear = scan.nextInt();
-		}while((answear<1)&&(answear>12));
 	}
 }	
-				
-	
-
