@@ -17,8 +17,12 @@ public class TestSavingsAccount {
 			int amount = scan.nextInt();
 		
 		if (amount<savings.getBalance()) {
-			System.out.println("Your new balance is: " + savings.getBalance());
+			int remaining;
+			remaining = (int) (savings.getBalance()-amount);
+			System.out.println("Please pick up your money!");
+			System.out.println("Your new balance is: " + remaining);
 			System.out.println("Thank you for using our ATM!");
+			
 		}else if(amount>savings.getBalance()); {
 			System.out.println("The amount you entered is greater than the available balance: " + savings.getBalance());
 			System.out.println("Thank you for using our ATM!");

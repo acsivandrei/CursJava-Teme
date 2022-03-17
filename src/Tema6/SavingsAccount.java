@@ -10,7 +10,7 @@ public class SavingsAccount extends Account {
 	
 	@Override
 	public void withdraw(int amount) throws InsuficientFundsException {
-		if(amount<getBalance()) {
+		if(amount>getBalance()) {
 			throw new InsuficientFundsException("Insuficient funds for transaction");
 		}else {
 			int remaining;
